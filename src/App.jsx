@@ -1,24 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+import React from "react";
+import Tittle from "./components/tittle/tittle"
+import Filter from "./components/filter/filter"
+function app() {
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <main>
+      <div className="container d-flex justify-content-center">
+        <Tittle />
+        <Filter />
       </div>
-      <h1>Emerson Pereira Da Silva</h1>
-      
-    </div>
+    </main>
   )
 }
 
-export default App
+export default app
